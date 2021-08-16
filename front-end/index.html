@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>arunix</title>
+    <link rel="shortcut icon" href="Marunix.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+</head>
+<body>
+    <script>alert("Welcome to MCA")</script>
+    <div class="w3-content w3-section" style="max-width:400px">
+        <img class="mySlides w3-animate-fading" src="staff/p1.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="staff/p2.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="staff/p3.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="staff/p4.jpg" style="width:100%">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000);    
+        }
+        </script>
+
+    <!-- Animate picture -->
+    <div class="w3-bar w3-light-grey w3-border w3-padding" style="font-size: 1.11rem;">
+        <div class="slid-bar-home">
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">PE</a> 
+        <a href="mchange.html" class="w3-bar-item w3-button w3-mobile">4M</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Information</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">About us</a> 
+        </div>    
+        <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">    
+         <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>       
+    </div>
+    <!-- Finish narvibar -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Close &times;</button>
+
+            <div class="slid-bar">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">About PE</a>
+            <a href="mchange.html" class="w3-bar-item w3-button">4M change</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Information</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">About us</a>
+                <div class="w3-container w3-green w3-cell">
+                    <p>Hello welcome to our website, please check any point that you need to know
+                        about our production, about our working process
+                    </p>
+                </div>
+            </div>     
+      </div>
+      <div id="main">
+      <div class="w3-teal">
+        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    </div>
+    <!-- Finsh slid bar -->
+    <div>
+        <h1 style="font-size: 3rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Welcome to Marunix Cambodia</h1>
+        <p>We are happy for prdouce your product and keep Qulity for your product</p>
+    </div>
+        <script src="index.js"></script>
+        <p><i class="fa fa-spinner w3-spin" style="font-size:64p; position: center;"></i></p>
+        <div><h4>At department Production Engineering we always support work in factory and we make our work to easy.</h4></div>
+        <img class="w3-animate-fading" src="IMG_20200813_102536_1.jpg" style="width:100%">
+        <div><br /></div>
+        <div><h4>At department Production Engineering we always support work in factory and we make our work to easy.</h4></div>
+        <img class="w3-animate-fading" src="IMG_20200824_135533.jpg" style="width:100%">
+
+    <div class="w3-container w3-teal">
+     <h4>All right for you</h4>
+    </div>
+</body>
+</html>
